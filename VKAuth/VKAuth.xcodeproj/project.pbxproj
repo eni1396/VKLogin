@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E11FF439D9958433AF60DC /* Pods_VKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DFE96EA49808697C89AA95 /* Pods_VKAuth.framework */; };
 		CE68A09126BAB20700AFD358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A09026BAB20700AFD358 /* AppDelegate.swift */; };
 		CE68A09326BAB20700AFD358 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A09226BAB20700AFD358 /* SceneDelegate.swift */; };
 		CE68A09526BAB20700AFD358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A09426BAB20700AFD358 /* ViewController.swift */; };
 		CE68A09826BAB20700AFD358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68A09626BAB20700AFD358 /* Main.storyboard */; };
 		CE68A09A26BAB20D00AFD358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE68A09926BAB20D00AFD358 /* Assets.xcassets */; };
 		CE68A09D26BAB20D00AFD358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68A09B26BAB20D00AFD358 /* LaunchScreen.storyboard */; };
+		CE68A0A526BADF7A00AFD358 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A0A426BADF7900AFD358 /* Authentication.swift */; };
+		CE68A0A926BB4C4300AFD358 /* Pictures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68A0A826BB4C4300AFD358 /* Pictures.storyboard */; };
+		CE68A0AB26BB4C6200AFD358 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A0AA26BB4C6200AFD358 /* PicturesViewController.swift */; };
+		CE68A0AC26BC09C300AFD358 /* Pods_VKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DFE96EA49808697C89AA95 /* Pods_VKAuth.framework */; };
+		CE68A0AD26BC09C300AFD358 /* Pods_VKAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53DFE96EA49808697C89AA95 /* Pods_VKAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE68A0AE26BC09C400AFD358 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE68A0AD26BC09C300AFD358 /* Pods_VKAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C01B93B3E65C3C83AE8D5D8 /* Pods-VKAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAuth.release.xcconfig"; path = "Target Support Files/Pods-VKAuth/Pods-VKAuth.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +46,9 @@
 		CE68A09926BAB20D00AFD358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE68A09C26BAB20D00AFD358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE68A09E26BAB20D00AFD358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE68A0A426BADF7900AFD358 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		CE68A0A826BB4C4300AFD358 /* Pictures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pictures.storyboard; sourceTree = "<group>"; };
+		CE68A0AA26BB4C6200AFD358 /* PicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E11FF439D9958433AF60DC /* Pods_VKAuth.framework in Frameworks */,
+				CE68A0AC26BC09C300AFD358 /* Pods_VKAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +69,6 @@
 				3DD08AD6344D303E159358AF /* Pods-VKAuth.debug.xcconfig */,
 				2C01B93B3E65C3C83AE8D5D8 /* Pods-VKAuth.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,7 +93,9 @@
 		CE68A08F26BAB20700AFD358 /* VKAuth */ = {
 			isa = PBXGroup;
 			children = (
+				CE68A0A726BB4BB400AFD358 /* MVP */,
 				CE68A09026BAB20700AFD358 /* AppDelegate.swift */,
+				CE68A0A426BADF7900AFD358 /* Authentication.swift */,
 				CE68A09226BAB20700AFD358 /* SceneDelegate.swift */,
 				CE68A09426BAB20700AFD358 /* ViewController.swift */,
 				CE68A09626BAB20700AFD358 /* Main.storyboard */,
@@ -82,6 +104,15 @@
 				CE68A09E26BAB20D00AFD358 /* Info.plist */,
 			);
 			path = VKAuth;
+			sourceTree = "<group>";
+		};
+		CE68A0A726BB4BB400AFD358 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				CE68A0A826BB4C4300AFD358 /* Pictures.storyboard */,
+				CE68A0AA26BB4C6200AFD358 /* PicturesViewController.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		FD2EB77F498502D3A8C9432A /* Frameworks */ = {
@@ -104,6 +135,7 @@
 				CE68A08A26BAB20600AFD358 /* Frameworks */,
 				CE68A08B26BAB20600AFD358 /* Resources */,
 				694722D1A84791E8CD4EB32A /* [CP] Embed Pods Frameworks */,
+				CE68A0AE26BC09C400AFD358 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE68A09D26BAB20D00AFD358 /* LaunchScreen.storyboard in Resources */,
+				CE68A0A926BB4C4300AFD358 /* Pictures.storyboard in Resources */,
 				CE68A09A26BAB20D00AFD358 /* Assets.xcassets in Resources */,
 				CE68A09826BAB20700AFD358 /* Main.storyboard in Resources */,
 			);
@@ -208,7 +241,9 @@
 			files = (
 				CE68A09526BAB20700AFD358 /* ViewController.swift in Sources */,
 				CE68A09126BAB20700AFD358 /* AppDelegate.swift in Sources */,
+				CE68A0AB26BB4C6200AFD358 /* PicturesViewController.swift in Sources */,
 				CE68A09326BAB20700AFD358 /* SceneDelegate.swift in Sources */,
+				CE68A0A526BADF7A00AFD358 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
