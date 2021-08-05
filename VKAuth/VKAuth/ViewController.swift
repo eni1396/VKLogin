@@ -39,8 +39,8 @@ extension ViewController: AuthenticationDelegate {
         print(#function)
         let nc = UIStoryboard(name: "Pictures", bundle: nil).instantiateInitialViewController() as! UINavigationController
         nc.modalPresentationStyle = .fullScreen
-            present(nc, animated: true, completion: nil)
-        
+        let window = UIApplication.shared.windows.first
+        window?.rootViewController = nc
     }
     
     func signInFailed() {

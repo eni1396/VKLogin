@@ -17,22 +17,7 @@
 		CE68A0A926BB4C4300AFD358 /* Pictures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68A0A826BB4C4300AFD358 /* Pictures.storyboard */; };
 		CE68A0AB26BB4C6200AFD358 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A0AA26BB4C6200AFD358 /* PicturesViewController.swift */; };
 		CE68A0AC26BC09C300AFD358 /* Pods_VKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DFE96EA49808697C89AA95 /* Pods_VKAuth.framework */; };
-		CE68A0AD26BC09C300AFD358 /* Pods_VKAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53DFE96EA49808697C89AA95 /* Pods_VKAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CE68A0AE26BC09C400AFD358 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CE68A0AD26BC09C300AFD358 /* Pods_VKAuth.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C01B93B3E65C3C83AE8D5D8 /* Pods-VKAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAuth.release.xcconfig"; path = "Target Support Files/Pods-VKAuth/Pods-VKAuth.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +120,6 @@
 				CE68A08A26BAB20600AFD358 /* Frameworks */,
 				CE68A08B26BAB20600AFD358 /* Resources */,
 				694722D1A84791E8CD4EB32A /* [CP] Embed Pods Frameworks */,
-				CE68A0AE26BC09C400AFD358 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
